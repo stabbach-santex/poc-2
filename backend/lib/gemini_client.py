@@ -198,7 +198,8 @@ class GeminiClient:
     
     def generate_explanation(self, nl_query: str, sql: str, rows: list) -> str:
         """
-        Genera explicación en lenguaje natural de los resultados.
+        Genera explicación inteligente en lenguaje natural de los resultados.
+        Analiza los datos y proporciona insights, no solo cuenta filas.
         
         Args:
             nl_query: Pregunta original
@@ -206,31 +207,166 @@ class GeminiClient:
             rows: Resultados obtenidos
         
         Returns:
-            Explicación en texto
+            Explicación detallada con análisis e insights
         """
         if not rows:
-            return "No se encontraron resultados para esta consulta."
+            return "❌ No se encontraron resultados para esta consulta. Intenta reformular tu pregunta o verifica que los datos existan."
         
         num_rows = len(rows)
         
         if self.use_mock:
-            return f"Se encontraron {num_rows} resultado(s) para tu consulta."
+            return self._generate_smart_mock_explanation(nl_query, sql, rows, num_rows)
         
         try:
-            prompt = f"""Basándote en la siguiente consulta y resultados, genera una explicación breve en español:
+            # Preparar muestra de datos (máximo 5 filas para no saturar el prompt)
+            sample_rows = rows[:5] if len(rows) > 5 else rows
+            
+            # Convertir datos a formato legible
+            import json
+            data_sample = json.dumps(sample_rows, indent=2, ensure_ascii=False)
+            
+            prompt = f"""Eres un analista de datos experto en logística y flotas de camiones. 
 
-Pregunta: {nl_query}
-SQL ejecutado: {sql}
-Número de resultados: {num_rows}
+PREGUNTA DEL USUARIO:
+{nl_query}
 
-Genera una explicación de 1-2 oraciones sobre qué muestran estos resultados."""
+SQL EJECUTADO:
+{sql}
+
+RESULTADOS OBTENIDOS ({num_rows} registros):
+{data_sample}
+{"..." if len(rows) > 5 else ""}
+
+INSTRUCCIONES:
+1. Analiza los resultados y genera una explicación en lenguaje natural conversacional
+2. Identifica insights clave (máximos, mínimos, promedios, tendencias, patrones)
+3. Si es relevante, menciona implicaciones de negocio o recomendaciones
+4. Usa un tono profesional pero amigable
+5. Máximo 3-4 oraciones
+6. Si hay datos numéricos importantes, menciónalos específicamente
+7. NO repitas la pregunta, ve directo al análisis
+
+FORMATO DE RESPUESTA:
+📊 [Explicación del resultado principal]
+💡 [Insight o dato destacado]
+[Recomendación u observación adicional si aplica]
+
+Genera la explicación:"""
             
             response = self.model.generate_content(prompt)
-            return response.text.strip()
+            explanation = response.text.strip()
+            
+            # Agregar conteo de resultados al final si no está mencionado
+            if str(num_rows) not in explanation and num_rows > 1:
+                explanation += f"\n\n📈 Total de registros encontrados: {num_rows}"
+            
+            return explanation
             
         except Exception as e:
             print(f"⚠️  Error generando explicación: {e}")
-            return f"Se encontraron {num_rows} resultado(s) para tu consulta."
+            # Fallback a explicación inteligente sin API
+            return self._generate_smart_mock_explanation(nl_query, sql, rows, num_rows)
+    
+    def _generate_smart_mock_explanation(self, nl_query: str, sql: str, rows: list, num_rows: int) -> str:
+        """
+        Genera explicación inteligente sin usar API, analizando los datos directamente.
+        """
+        if num_rows == 0:
+            return "❌ No se encontraron resultados para esta consulta."
+        
+        nl_lower = nl_query.lower()
+        explanation_parts = []
+        
+        # Analizar el tipo de query y los resultados
+        try:
+            # Detectar agregaciones
+            if "count" in sql.lower() and len(rows) == 1 and "count" in str(rows[0]).lower():
+                count_value = list(rows[0].values())[0] if isinstance(rows[0], dict) else rows[0][0]
+                explanation_parts.append(f"📊 Se encontraron **{count_value}** registros que coinciden con tu consulta.")
+            
+            # Detectar TOP/LIMIT con ordenamiento
+            elif ("order by" in sql.lower() or "top" in nl_lower or "más" in nl_lower or "mayor" in nl_lower) and num_rows > 0:
+                first_row = rows[0]
+                if isinstance(first_row, dict):
+                    # Identificar la columna principal
+                    keys = list(first_row.keys())
+                    id_col = keys[0] if keys else None
+                    value_col = keys[1] if len(keys) > 1 else keys[0]
+                    
+                    if id_col and value_col:
+                        top_id = first_row[id_col]
+                        top_value = first_row[value_col]
+                        
+                        # Detectar el tipo de métrica basándose en la columna y la query
+                        value_col_lower = value_col.lower()
+                        
+                        if "alert" in value_col_lower or "alerta" in nl_lower:
+                            explanation_parts.append(f"📊 El camión **{top_id}** tiene el mayor número de alertas: **{top_value}**.")
+                        elif "temp" in value_col_lower or ("temperatura" in nl_lower and "alerta" not in nl_lower):
+                            explanation_parts.append(f"📊 El camión **{top_id}** registró la mayor temperatura con **{top_value}°C**.")
+                        elif "distance" in value_col_lower or "km" in value_col_lower or "kilómetro" in nl_lower or "distancia" in nl_lower:
+                            explanation_parts.append(f"📊 El camión **{top_id}** ha recorrido la mayor distancia: **{top_value} km**.")
+                        elif "fuel" in value_col_lower or "combustible" in nl_lower:
+                            explanation_parts.append(f"📊 El camión **{top_id}** tiene el mayor consumo de combustible: **{top_value}**.")
+                        elif "speed" in value_col_lower or "velocidad" in nl_lower:
+                            explanation_parts.append(f"📊 El camión **{top_id}** registró la mayor velocidad: **{top_value} km/h**.")
+                        else:
+                            explanation_parts.append(f"📊 **{top_id}** lidera con un valor de **{top_value}**.")
+                        
+                        # Mencionar top 3 si hay más
+                        if num_rows >= 3:
+                            explanation_parts.append(f"💡 Los siguientes en el ranking completan el top {min(num_rows, 3)}.")
+            
+            # Detectar promedios
+            elif "avg" in sql.lower() or "promedio" in nl_lower:
+                if num_rows > 0 and isinstance(rows[0], dict):
+                    avg_cols = [k for k in rows[0].keys() if 'avg' in k.lower() or 'promedio' in k.lower()]
+                    if avg_cols:
+                        avg_col = avg_cols[0]
+                        values = [row[avg_col] for row in rows if avg_col in row]
+                        if values:
+                            max_val = max(values)
+                            min_val = min(values)
+                            avg_val = sum(values) / len(values)
+                            
+                            max_row = next(row for row in rows if row.get(avg_col) == max_val)
+                            min_row = next(row for row in rows if row.get(avg_col) == min_val)
+                            
+                            group_col = [k for k in rows[0].keys() if k != avg_col][0]
+                            
+                            explanation_parts.append(f"📊 El promedio general es **{avg_val:.1f}**.")
+                            explanation_parts.append(f"💡 **{max_row[group_col]}** tiene el valor más alto ({max_val:.1f}) mientras que **{min_row[group_col]}** el más bajo ({min_val:.1f}).")
+            
+            # Detectar GROUP BY
+            elif "group by" in sql.lower() and num_rows > 1:
+                explanation_parts.append(f"📊 Se agruparon los resultados en **{num_rows}** categorías diferentes.")
+                if isinstance(rows[0], dict) and len(rows[0]) >= 2:
+                    keys = list(rows[0].keys())
+                    explanation_parts.append(f"💡 Cada categoría muestra información de **{', '.join(keys[1:])}**.")
+            
+            # Filtros específicos
+            if "mantenimiento" in nl_lower:
+                explanation_parts.append("🔧 Estos camiones requieren atención de mantenimiento prioritaria.")
+            elif "crítica" in nl_lower or "critical" in sql.lower():
+                explanation_parts.append("⚠️ Estas alertas requieren atención inmediata.")
+            elif "velocidad" in nl_lower:
+                explanation_parts.append("🚨 Considera revisar las políticas de conducción y capacitación de conductores.")
+            
+        except Exception as e:
+            print(f"⚠️  Error en análisis mock: {e}")
+        
+        # Si no se generó ninguna explicación específica, usar genérica mejorada
+        if not explanation_parts:
+            if num_rows == 1:
+                explanation_parts.append(f"✅ Se encontró **1 resultado** que coincide con tu consulta.")
+            else:
+                explanation_parts.append(f"✅ Se encontraron **{num_rows} resultados** que coinciden con tu consulta.")
+        
+        # Agregar conteo final si no está
+        if num_rows > 1 and str(num_rows) not in ' '.join(explanation_parts):
+            explanation_parts.append(f"\n📈 Total de registros: **{num_rows}**")
+        
+        return ' '.join(explanation_parts)
 
 
 # Test del cliente
