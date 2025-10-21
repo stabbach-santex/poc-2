@@ -1,0 +1,11 @@
+# Mapeo de campos de Cloudfleet a schema canónico
+# Formato: campo_destino: campo_origen
+
+telemetry:
+  telemetry_id: position_id
+  truck_id: truck_code
+  timestamp: recorded_at
+  speed_kmh: speed_kph
+  fuel_level: fuel_percentage
+  # engine_temp_c no disponible en Cloudfleet, se dejará NULL
+  # Campos adicionales (lat, lon) se ignoran en schema canónico básico

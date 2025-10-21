@@ -1,0 +1,14 @@
+# Mapeo de campos de Tera a schema canónico
+# Formato: campo_destino: campo_origen
+
+trips:
+  trip_id: trip_id
+  truck_id: vehicle_id
+  origin: origin_city
+  destination: dest_city
+  start_time: departure_time
+  end_time: arrival_time
+  distance_km: distance
+  status: trip_status
+  # Campos adicionales específicos de fuente (se ignoran en schema canónico)
+  # cargo_weight: cargo_weight

@@ -1,0 +1,11 @@
+# Mapeo de campos de Scania a schema canónico
+# Formato: campo_destino: campo_origen
+
+telemetry:
+  telemetry_id: metric_id
+  truck_id: vehicle_vin
+  timestamp: timestamp_utc
+  speed_kmh: velocity_kmh
+  fuel_level: fuel_level_liters
+  engine_temp_c: engine_temperature_celsius
+  # Campos adicionales (engine_rpm, total_km) se ignoran

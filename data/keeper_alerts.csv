@@ -1,0 +1,301 @@
+alert_code,truck_identifier,event_timestamp,alert_category,priority_level,message,acknowledged
+KEEPER_A_0001,TRUCK_024,2025-10-12T04:11:07Z,speed,medium,Speed limit exceeded: 130 km/h,True
+KEEPER_A_0002,TRUCK_031,2025-10-20T16:58:07Z,temperature,low,Engine temp 108°C - sensor 3,False
+KEEPER_A_0003,TRUCK_005,2025-10-14T16:38:07Z,brake,high,Brake system warning - pressure low,False
+KEEPER_A_0004,TRUCK_011,2025-10-15T06:11:07Z,engine,medium,Engine fault code: P165,False
+KEEPER_A_0005,TRUCK_039,2025-10-10T05:22:07Z,speed,high,Speed limit exceeded: 144 km/h,False
+KEEPER_A_0006,TRUCK_022,2025-10-14T03:59:07Z,brake,low,Brake system warning - pressure low,True
+KEEPER_A_0007,TRUCK_039,2025-10-09T00:08:07Z,speed,critical,Speed limit exceeded: 147 km/h,False
+KEEPER_A_0008,TRUCK_015,2025-10-14T11:57:07Z,temperature,low,Engine temp 104°C - sensor 3,True
+KEEPER_A_0009,TRUCK_016,2025-10-12T08:25:07Z,speed,high,Speed limit exceeded: 147 km/h,False
+KEEPER_A_0010,TRUCK_011,2025-10-09T12:15:07Z,fuel,high,Low fuel level: 10%,False
+KEEPER_A_0011,TRUCK_027,2025-10-16T03:54:07Z,engine,low,Engine fault code: P729,False
+KEEPER_A_0012,TRUCK_027,2025-10-09T06:57:07Z,speed,high,Speed limit exceeded: 125 km/h,False
+KEEPER_A_0013,TRUCK_030,2025-10-12T11:01:07Z,engine,low,Engine fault code: P436,False
+KEEPER_A_0014,TRUCK_036,2025-10-06T23:20:07Z,temperature,low,Engine temp 108°C - sensor 1,False
+KEEPER_A_0015,TRUCK_020,2025-10-18T13:14:07Z,fuel,medium,Low fuel level: 7%,False
+KEEPER_A_0016,TRUCK_042,2025-10-20T17:32:07Z,speed,medium,Speed limit exceeded: 120 km/h,True
+KEEPER_A_0017,TRUCK_024,2025-10-16T22:33:07Z,brake,low,Brake system warning - pressure low,False
+KEEPER_A_0018,TRUCK_025,2025-10-14T23:26:07Z,speed,medium,Speed limit exceeded: 131 km/h,False
+KEEPER_A_0019,TRUCK_012,2025-10-11T14:58:07Z,engine,low,Engine fault code: P104,False
+KEEPER_A_0020,TRUCK_008,2025-10-09T01:55:07Z,speed,high,Speed limit exceeded: 133 km/h,False
+KEEPER_A_0021,TRUCK_041,2025-10-07T07:08:07Z,brake,low,Brake system warning - pressure low,True
+KEEPER_A_0022,TRUCK_003,2025-10-09T00:54:07Z,tire_pressure,critical,Tire 4 pressure 27 PSI,True
+KEEPER_A_0023,TRUCK_021,2025-10-11T03:21:07Z,tire_pressure,critical,Tire 3 pressure 20 PSI,True
+KEEPER_A_0024,TRUCK_039,2025-10-08T11:47:07Z,tire_pressure,high,Tire 1 pressure 21 PSI,True
+KEEPER_A_0025,TRUCK_015,2025-10-17T04:44:07Z,speed,low,Speed limit exceeded: 123 km/h,True
+KEEPER_A_0026,TRUCK_034,2025-10-07T02:55:07Z,speed,high,Speed limit exceeded: 127 km/h,False
+KEEPER_A_0027,TRUCK_033,2025-10-15T01:49:07Z,tire_pressure,high,Tire 1 pressure 25 PSI,True
+KEEPER_A_0028,TRUCK_033,2025-10-15T09:46:07Z,temperature,medium,Engine temp 101°C - sensor 1,False
+KEEPER_A_0029,TRUCK_006,2025-10-06T19:33:07Z,temperature,high,Engine temp 106°C - sensor 4,False
+KEEPER_A_0030,TRUCK_010,2025-10-11T23:34:07Z,brake,high,Brake system warning - pressure low,True
+KEEPER_A_0031,TRUCK_040,2025-10-10T22:06:07Z,engine,high,Engine fault code: P510,False
+KEEPER_A_0032,TRUCK_002,2025-10-15T10:34:07Z,tire_pressure,medium,Tire 1 pressure 21 PSI,True
+KEEPER_A_0033,TRUCK_021,2025-10-06T23:46:07Z,tire_pressure,low,Tire 2 pressure 26 PSI,False
+KEEPER_A_0034,TRUCK_018,2025-10-15T06:47:07Z,engine,critical,Engine fault code: P303,False
+KEEPER_A_0035,TRUCK_045,2025-10-16T16:19:07Z,fuel,low,Low fuel level: 9%,False
+KEEPER_A_0036,TRUCK_017,2025-10-09T06:50:07Z,brake,high,Brake system warning - pressure low,False
+KEEPER_A_0037,TRUCK_032,2025-10-20T14:02:07Z,fuel,low,Low fuel level: 5%,True
+KEEPER_A_0038,TRUCK_031,2025-10-14T01:27:07Z,engine,high,Engine fault code: P865,False
+KEEPER_A_0039,TRUCK_042,2025-10-12T01:10:07Z,engine,low,Engine fault code: P152,True
+KEEPER_A_0040,TRUCK_032,2025-10-19T23:26:07Z,fuel,low,Low fuel level: 5%,False
+KEEPER_A_0041,TRUCK_011,2025-10-20T11:27:07Z,speed,high,Speed limit exceeded: 148 km/h,False
+KEEPER_A_0042,TRUCK_002,2025-10-10T07:55:07Z,engine,medium,Engine fault code: P487,False
+KEEPER_A_0043,TRUCK_036,2025-10-15T08:33:07Z,temperature,critical,Engine temp 107°C - sensor 4,False
+KEEPER_A_0044,TRUCK_011,2025-10-10T17:59:07Z,fuel,critical,Low fuel level: 12%,False
+KEEPER_A_0045,TRUCK_005,2025-10-09T11:52:07Z,tire_pressure,high,Tire 2 pressure 28 PSI,False
+KEEPER_A_0046,TRUCK_021,2025-10-09T06:44:07Z,temperature,low,Engine temp 109°C - sensor 1,False
+KEEPER_A_0047,TRUCK_001,2025-10-08T20:53:07Z,temperature,high,Engine temp 100°C - sensor 1,True
+KEEPER_A_0048,TRUCK_017,2025-10-19T04:06:07Z,speed,medium,Speed limit exceeded: 143 km/h,True
+KEEPER_A_0049,TRUCK_020,2025-10-14T03:16:07Z,speed,medium,Speed limit exceeded: 129 km/h,False
+KEEPER_A_0050,TRUCK_040,2025-10-14T11:40:07Z,fuel,critical,Low fuel level: 15%,False
+KEEPER_A_0051,TRUCK_036,2025-10-20T14:24:07Z,tire_pressure,medium,Tire 2 pressure 30 PSI,True
+KEEPER_A_0052,TRUCK_036,2025-10-14T08:56:07Z,brake,medium,Brake system warning - pressure low,False
+KEEPER_A_0053,TRUCK_030,2025-10-20T20:07:07Z,speed,critical,Speed limit exceeded: 127 km/h,True
+KEEPER_A_0054,TRUCK_024,2025-10-15T10:17:07Z,engine,high,Engine fault code: P624,False
+KEEPER_A_0055,TRUCK_038,2025-10-13T02:05:07Z,tire_pressure,medium,Tire 1 pressure 27 PSI,False
+KEEPER_A_0056,TRUCK_023,2025-10-21T08:02:07Z,engine,low,Engine fault code: P306,True
+KEEPER_A_0057,TRUCK_016,2025-10-14T12:51:07Z,engine,low,Engine fault code: P103,True
+KEEPER_A_0058,TRUCK_036,2025-10-09T13:01:07Z,fuel,high,Low fuel level: 11%,True
+KEEPER_A_0059,TRUCK_004,2025-10-08T10:16:07Z,temperature,high,Engine temp 109°C - sensor 2,True
+KEEPER_A_0060,TRUCK_034,2025-10-18T00:17:07Z,tire_pressure,critical,Tire 6 pressure 22 PSI,True
+KEEPER_A_0061,TRUCK_032,2025-10-14T23:53:07Z,tire_pressure,medium,Tire 4 pressure 20 PSI,True
+KEEPER_A_0062,TRUCK_038,2025-10-16T05:53:07Z,fuel,medium,Low fuel level: 7%,False
+KEEPER_A_0063,TRUCK_005,2025-10-11T07:23:07Z,brake,critical,Brake system warning - pressure low,True
+KEEPER_A_0064,TRUCK_013,2025-10-06T23:29:07Z,tire_pressure,medium,Tire 6 pressure 29 PSI,False
+KEEPER_A_0065,TRUCK_014,2025-10-07T05:16:07Z,temperature,medium,Engine temp 103°C - sensor 4,True
+KEEPER_A_0066,TRUCK_049,2025-10-13T02:01:07Z,tire_pressure,medium,Tire 3 pressure 27 PSI,True
+KEEPER_A_0067,TRUCK_048,2025-10-08T00:31:07Z,tire_pressure,low,Tire 5 pressure 24 PSI,True
+KEEPER_A_0068,TRUCK_027,2025-10-14T12:20:07Z,speed,critical,Speed limit exceeded: 143 km/h,True
+KEEPER_A_0069,TRUCK_006,2025-10-14T18:31:07Z,engine,critical,Engine fault code: P332,True
+KEEPER_A_0070,TRUCK_040,2025-10-15T10:17:07Z,tire_pressure,low,Tire 3 pressure 23 PSI,True
+KEEPER_A_0071,TRUCK_023,2025-10-13T04:37:07Z,speed,medium,Speed limit exceeded: 150 km/h,False
+KEEPER_A_0072,TRUCK_004,2025-10-09T08:47:07Z,speed,critical,Speed limit exceeded: 144 km/h,True
+KEEPER_A_0073,TRUCK_039,2025-10-15T09:27:07Z,tire_pressure,critical,Tire 1 pressure 23 PSI,False
+KEEPER_A_0074,TRUCK_029,2025-10-19T23:48:07Z,fuel,low,Low fuel level: 7%,True
+KEEPER_A_0075,TRUCK_042,2025-10-20T07:53:07Z,brake,critical,Brake system warning - pressure low,False
+KEEPER_A_0076,TRUCK_029,2025-10-18T03:19:07Z,temperature,critical,Engine temp 99°C - sensor 2,False
+KEEPER_A_0077,TRUCK_047,2025-10-18T15:45:07Z,tire_pressure,high,Tire 3 pressure 23 PSI,True
+KEEPER_A_0078,TRUCK_028,2025-10-19T08:43:07Z,tire_pressure,low,Tire 2 pressure 28 PSI,True
+KEEPER_A_0079,TRUCK_013,2025-10-11T06:34:07Z,tire_pressure,critical,Tire 1 pressure 20 PSI,True
+KEEPER_A_0080,TRUCK_012,2025-10-20T06:19:07Z,speed,low,Speed limit exceeded: 140 km/h,False
+KEEPER_A_0081,TRUCK_050,2025-10-09T07:34:07Z,brake,medium,Brake system warning - pressure low,False
+KEEPER_A_0082,TRUCK_030,2025-10-21T09:19:07Z,temperature,medium,Engine temp 103°C - sensor 3,False
+KEEPER_A_0083,TRUCK_045,2025-10-10T21:11:07Z,temperature,critical,Engine temp 97°C - sensor 3,True
+KEEPER_A_0084,TRUCK_006,2025-10-07T03:10:07Z,tire_pressure,low,Tire 6 pressure 24 PSI,False
+KEEPER_A_0085,TRUCK_041,2025-10-07T14:01:07Z,brake,high,Brake system warning - pressure low,False
+KEEPER_A_0086,TRUCK_017,2025-10-06T19:53:07Z,tire_pressure,critical,Tire 6 pressure 26 PSI,False
+KEEPER_A_0087,TRUCK_035,2025-10-08T04:09:07Z,speed,high,Speed limit exceeded: 141 km/h,True
+KEEPER_A_0088,TRUCK_025,2025-10-16T03:48:07Z,temperature,medium,Engine temp 100°C - sensor 2,False
+KEEPER_A_0089,TRUCK_023,2025-10-17T07:26:07Z,brake,critical,Brake system warning - pressure low,False
+KEEPER_A_0090,TRUCK_031,2025-10-20T02:36:07Z,temperature,high,Engine temp 109°C - sensor 3,True
+KEEPER_A_0091,TRUCK_015,2025-10-19T06:45:07Z,engine,critical,Engine fault code: P232,True
+KEEPER_A_0092,TRUCK_045,2025-10-09T17:06:07Z,speed,low,Speed limit exceeded: 125 km/h,True
+KEEPER_A_0093,TRUCK_042,2025-10-16T15:34:07Z,fuel,critical,Low fuel level: 6%,True
+KEEPER_A_0094,TRUCK_030,2025-10-07T17:31:07Z,speed,critical,Speed limit exceeded: 136 km/h,True
+KEEPER_A_0095,TRUCK_010,2025-10-15T11:34:07Z,speed,critical,Speed limit exceeded: 134 km/h,False
+KEEPER_A_0096,TRUCK_046,2025-10-21T04:54:07Z,tire_pressure,high,Tire 2 pressure 22 PSI,True
+KEEPER_A_0097,TRUCK_018,2025-10-08T15:22:07Z,speed,low,Speed limit exceeded: 139 km/h,False
+KEEPER_A_0098,TRUCK_050,2025-10-16T22:43:07Z,speed,low,Speed limit exceeded: 130 km/h,False
+KEEPER_A_0099,TRUCK_022,2025-10-18T18:35:07Z,tire_pressure,critical,Tire 3 pressure 21 PSI,False
+KEEPER_A_0100,TRUCK_016,2025-10-19T18:20:07Z,temperature,critical,Engine temp 106°C - sensor 1,False
+KEEPER_A_0101,TRUCK_043,2025-10-17T20:51:07Z,speed,critical,Speed limit exceeded: 143 km/h,True
+KEEPER_A_0102,TRUCK_013,2025-10-08T20:52:07Z,tire_pressure,critical,Tire 4 pressure 29 PSI,True
+KEEPER_A_0103,TRUCK_004,2025-10-18T05:46:07Z,engine,low,Engine fault code: P423,True
+KEEPER_A_0104,TRUCK_040,2025-10-17T19:38:07Z,temperature,medium,Engine temp 100°C - sensor 2,False
+KEEPER_A_0105,TRUCK_038,2025-10-11T21:47:07Z,fuel,critical,Low fuel level: 15%,False
+KEEPER_A_0106,TRUCK_021,2025-10-13T11:50:07Z,engine,high,Engine fault code: P581,False
+KEEPER_A_0107,TRUCK_042,2025-10-13T05:23:07Z,engine,medium,Engine fault code: P972,False
+KEEPER_A_0108,TRUCK_038,2025-10-18T14:28:07Z,speed,low,Speed limit exceeded: 135 km/h,True
+KEEPER_A_0109,TRUCK_037,2025-10-12T05:26:07Z,engine,high,Engine fault code: P758,False
+KEEPER_A_0110,TRUCK_007,2025-10-13T13:19:07Z,temperature,low,Engine temp 98°C - sensor 3,True
+KEEPER_A_0111,TRUCK_046,2025-10-12T05:58:07Z,brake,critical,Brake system warning - pressure low,False
+KEEPER_A_0112,TRUCK_039,2025-10-15T19:36:07Z,brake,high,Brake system warning - pressure low,True
+KEEPER_A_0113,TRUCK_026,2025-10-21T11:39:07Z,tire_pressure,low,Tire 1 pressure 23 PSI,True
+KEEPER_A_0114,TRUCK_011,2025-10-09T09:22:07Z,temperature,high,Engine temp 99°C - sensor 2,True
+KEEPER_A_0115,TRUCK_020,2025-10-18T05:09:07Z,engine,medium,Engine fault code: P862,True
+KEEPER_A_0116,TRUCK_011,2025-10-18T20:07:07Z,speed,high,Speed limit exceeded: 133 km/h,True
+KEEPER_A_0117,TRUCK_034,2025-10-20T20:15:07Z,engine,high,Engine fault code: P455,False
+KEEPER_A_0118,TRUCK_032,2025-10-13T01:07:07Z,engine,high,Engine fault code: P612,False
+KEEPER_A_0119,TRUCK_046,2025-10-11T13:59:07Z,fuel,low,Low fuel level: 11%,True
+KEEPER_A_0120,TRUCK_048,2025-10-10T00:49:07Z,tire_pressure,high,Tire 6 pressure 26 PSI,True
+KEEPER_A_0121,TRUCK_044,2025-10-15T23:52:07Z,fuel,medium,Low fuel level: 6%,False
+KEEPER_A_0122,TRUCK_049,2025-10-18T21:43:07Z,fuel,critical,Low fuel level: 6%,True
+KEEPER_A_0123,TRUCK_014,2025-10-13T15:48:07Z,tire_pressure,medium,Tire 6 pressure 26 PSI,False
+KEEPER_A_0124,TRUCK_010,2025-10-20T03:58:07Z,speed,medium,Speed limit exceeded: 128 km/h,True
+KEEPER_A_0125,TRUCK_014,2025-10-18T20:11:07Z,engine,medium,Engine fault code: P640,False
+KEEPER_A_0126,TRUCK_010,2025-10-14T09:24:07Z,tire_pressure,medium,Tire 6 pressure 24 PSI,True
+KEEPER_A_0127,TRUCK_037,2025-10-15T14:14:07Z,temperature,critical,Engine temp 102°C - sensor 4,False
+KEEPER_A_0128,TRUCK_021,2025-10-06T16:22:07Z,tire_pressure,low,Tire 3 pressure 24 PSI,False
+KEEPER_A_0129,TRUCK_028,2025-10-08T01:41:07Z,temperature,medium,Engine temp 102°C - sensor 3,True
+KEEPER_A_0130,TRUCK_032,2025-10-08T14:31:07Z,temperature,low,Engine temp 105°C - sensor 1,False
+KEEPER_A_0131,TRUCK_050,2025-10-15T13:55:07Z,engine,critical,Engine fault code: P708,True
+KEEPER_A_0132,TRUCK_014,2025-10-18T10:11:07Z,fuel,medium,Low fuel level: 7%,False
+KEEPER_A_0133,TRUCK_004,2025-10-18T20:40:07Z,fuel,critical,Low fuel level: 10%,False
+KEEPER_A_0134,TRUCK_049,2025-10-20T00:41:07Z,fuel,low,Low fuel level: 8%,False
+KEEPER_A_0135,TRUCK_021,2025-10-16T06:51:07Z,engine,critical,Engine fault code: P907,False
+KEEPER_A_0136,TRUCK_028,2025-10-16T11:36:07Z,temperature,low,Engine temp 98°C - sensor 3,True
+KEEPER_A_0137,TRUCK_038,2025-10-12T00:45:07Z,speed,critical,Speed limit exceeded: 136 km/h,False
+KEEPER_A_0138,TRUCK_042,2025-10-18T05:43:07Z,speed,low,Speed limit exceeded: 135 km/h,False
+KEEPER_A_0139,TRUCK_049,2025-10-10T21:34:07Z,fuel,high,Low fuel level: 6%,False
+KEEPER_A_0140,TRUCK_014,2025-10-08T12:10:07Z,fuel,medium,Low fuel level: 12%,True
+KEEPER_A_0141,TRUCK_027,2025-10-11T16:55:07Z,speed,critical,Speed limit exceeded: 137 km/h,True
+KEEPER_A_0142,TRUCK_021,2025-10-21T08:13:07Z,temperature,critical,Engine temp 95°C - sensor 2,True
+KEEPER_A_0143,TRUCK_031,2025-10-21T12:46:07Z,engine,critical,Engine fault code: P970,True
+KEEPER_A_0144,TRUCK_026,2025-10-20T07:38:07Z,speed,critical,Speed limit exceeded: 121 km/h,False
+KEEPER_A_0145,TRUCK_018,2025-10-16T02:41:07Z,fuel,medium,Low fuel level: 7%,False
+KEEPER_A_0146,TRUCK_046,2025-10-11T00:21:07Z,tire_pressure,medium,Tire 1 pressure 23 PSI,False
+KEEPER_A_0147,TRUCK_031,2025-10-14T21:04:07Z,engine,low,Engine fault code: P801,False
+KEEPER_A_0148,TRUCK_045,2025-10-16T12:41:07Z,engine,critical,Engine fault code: P359,True
+KEEPER_A_0149,TRUCK_009,2025-10-18T07:36:07Z,fuel,low,Low fuel level: 5%,True
+KEEPER_A_0150,TRUCK_006,2025-10-13T18:30:07Z,tire_pressure,low,Tire 1 pressure 29 PSI,True
+KEEPER_A_0151,TRUCK_039,2025-10-17T06:15:07Z,brake,medium,Brake system warning - pressure low,True
+KEEPER_A_0152,TRUCK_040,2025-10-07T10:19:07Z,engine,critical,Engine fault code: P417,False
+KEEPER_A_0153,TRUCK_006,2025-10-12T23:37:07Z,speed,high,Speed limit exceeded: 120 km/h,False
+KEEPER_A_0154,TRUCK_019,2025-10-11T04:49:07Z,fuel,low,Low fuel level: 7%,True
+KEEPER_A_0155,TRUCK_014,2025-10-12T02:24:07Z,engine,low,Engine fault code: P263,False
+KEEPER_A_0156,TRUCK_003,2025-10-19T09:30:07Z,engine,high,Engine fault code: P671,True
+KEEPER_A_0157,TRUCK_045,2025-10-14T13:56:07Z,temperature,high,Engine temp 100°C - sensor 1,False
+KEEPER_A_0158,TRUCK_023,2025-10-09T04:29:07Z,fuel,critical,Low fuel level: 12%,False
+KEEPER_A_0159,TRUCK_041,2025-10-20T12:59:07Z,temperature,medium,Engine temp 106°C - sensor 3,False
+KEEPER_A_0160,TRUCK_038,2025-10-17T09:11:07Z,tire_pressure,high,Tire 5 pressure 23 PSI,False
+KEEPER_A_0161,TRUCK_022,2025-10-07T23:23:07Z,brake,medium,Brake system warning - pressure low,False
+KEEPER_A_0162,TRUCK_022,2025-10-15T04:20:07Z,speed,medium,Speed limit exceeded: 127 km/h,False
+KEEPER_A_0163,TRUCK_050,2025-10-15T09:24:07Z,engine,low,Engine fault code: P937,True
+KEEPER_A_0164,TRUCK_007,2025-10-13T12:36:07Z,tire_pressure,high,Tire 5 pressure 30 PSI,False
+KEEPER_A_0165,TRUCK_027,2025-10-14T15:04:07Z,speed,medium,Speed limit exceeded: 136 km/h,False
+KEEPER_A_0166,TRUCK_034,2025-10-08T07:46:07Z,tire_pressure,high,Tire 1 pressure 30 PSI,True
+KEEPER_A_0167,TRUCK_012,2025-10-09T16:14:07Z,brake,low,Brake system warning - pressure low,False
+KEEPER_A_0168,TRUCK_040,2025-10-12T23:02:07Z,temperature,medium,Engine temp 100°C - sensor 4,True
+KEEPER_A_0169,TRUCK_033,2025-10-18T01:28:07Z,engine,low,Engine fault code: P140,False
+KEEPER_A_0170,TRUCK_030,2025-10-11T06:27:07Z,temperature,low,Engine temp 105°C - sensor 2,True
+KEEPER_A_0171,TRUCK_020,2025-10-09T18:04:07Z,brake,low,Brake system warning - pressure low,False
+KEEPER_A_0172,TRUCK_008,2025-10-14T11:11:07Z,engine,critical,Engine fault code: P607,False
+KEEPER_A_0173,TRUCK_011,2025-10-17T14:25:07Z,tire_pressure,medium,Tire 4 pressure 24 PSI,True
+KEEPER_A_0174,TRUCK_010,2025-10-09T02:54:07Z,engine,high,Engine fault code: P640,True
+KEEPER_A_0175,TRUCK_038,2025-10-12T23:56:07Z,engine,critical,Engine fault code: P348,False
+KEEPER_A_0176,TRUCK_025,2025-10-18T15:04:07Z,tire_pressure,high,Tire 5 pressure 20 PSI,False
+KEEPER_A_0177,TRUCK_018,2025-10-17T03:41:07Z,fuel,low,Low fuel level: 7%,False
+KEEPER_A_0178,TRUCK_007,2025-10-18T20:09:07Z,temperature,medium,Engine temp 98°C - sensor 1,True
+KEEPER_A_0179,TRUCK_014,2025-10-20T09:53:07Z,fuel,high,Low fuel level: 6%,False
+KEEPER_A_0180,TRUCK_038,2025-10-12T13:33:07Z,temperature,medium,Engine temp 100°C - sensor 2,True
+KEEPER_A_0181,TRUCK_015,2025-10-11T09:37:07Z,speed,high,Speed limit exceeded: 150 km/h,False
+KEEPER_A_0182,TRUCK_050,2025-10-15T05:00:07Z,tire_pressure,low,Tire 5 pressure 23 PSI,True
+KEEPER_A_0183,TRUCK_029,2025-10-10T00:21:07Z,temperature,high,Engine temp 95°C - sensor 2,True
+KEEPER_A_0184,TRUCK_012,2025-10-13T04:19:07Z,speed,low,Speed limit exceeded: 139 km/h,True
+KEEPER_A_0185,TRUCK_034,2025-10-12T03:52:07Z,fuel,low,Low fuel level: 11%,True
+KEEPER_A_0186,TRUCK_022,2025-10-12T09:30:07Z,tire_pressure,critical,Tire 4 pressure 25 PSI,True
+KEEPER_A_0187,TRUCK_015,2025-10-11T13:46:07Z,fuel,low,Low fuel level: 9%,False
+KEEPER_A_0188,TRUCK_005,2025-10-18T18:31:07Z,fuel,medium,Low fuel level: 12%,False
+KEEPER_A_0189,TRUCK_002,2025-10-16T19:28:07Z,temperature,medium,Engine temp 98°C - sensor 2,False
+KEEPER_A_0190,TRUCK_043,2025-10-21T06:26:07Z,engine,low,Engine fault code: P498,False
+KEEPER_A_0191,TRUCK_019,2025-10-11T14:06:07Z,speed,critical,Speed limit exceeded: 120 km/h,False
+KEEPER_A_0192,TRUCK_024,2025-10-19T19:21:07Z,tire_pressure,medium,Tire 4 pressure 26 PSI,True
+KEEPER_A_0193,TRUCK_009,2025-10-14T07:38:07Z,speed,low,Speed limit exceeded: 121 km/h,False
+KEEPER_A_0194,TRUCK_017,2025-10-07T14:47:07Z,speed,high,Speed limit exceeded: 130 km/h,False
+KEEPER_A_0195,TRUCK_024,2025-10-12T21:18:07Z,engine,critical,Engine fault code: P398,False
+KEEPER_A_0196,TRUCK_032,2025-10-15T20:00:07Z,tire_pressure,critical,Tire 5 pressure 22 PSI,True
+KEEPER_A_0197,TRUCK_043,2025-10-10T04:57:07Z,fuel,medium,Low fuel level: 14%,True
+KEEPER_A_0198,TRUCK_014,2025-10-18T11:26:07Z,speed,critical,Speed limit exceeded: 148 km/h,False
+KEEPER_A_0199,TRUCK_044,2025-10-12T21:57:07Z,speed,high,Speed limit exceeded: 136 km/h,True
+KEEPER_A_0200,TRUCK_046,2025-10-18T04:43:07Z,temperature,low,Engine temp 95°C - sensor 2,False
+KEEPER_A_0201,TRUCK_021,2025-10-17T10:03:07Z,tire_pressure,critical,Tire 1 pressure 27 PSI,False
+KEEPER_A_0202,TRUCK_041,2025-10-16T16:45:07Z,speed,low,Speed limit exceeded: 137 km/h,True
+KEEPER_A_0203,TRUCK_013,2025-10-19T08:41:07Z,fuel,medium,Low fuel level: 7%,False
+KEEPER_A_0204,TRUCK_004,2025-10-08T18:25:07Z,temperature,critical,Engine temp 95°C - sensor 2,True
+KEEPER_A_0205,TRUCK_005,2025-10-08T16:51:07Z,engine,medium,Engine fault code: P220,False
+KEEPER_A_0206,TRUCK_040,2025-10-16T04:05:07Z,temperature,critical,Engine temp 101°C - sensor 1,False
+KEEPER_A_0207,TRUCK_022,2025-10-18T01:06:07Z,temperature,critical,Engine temp 98°C - sensor 3,False
+KEEPER_A_0208,TRUCK_031,2025-10-13T06:53:07Z,speed,critical,Speed limit exceeded: 147 km/h,False
+KEEPER_A_0209,TRUCK_044,2025-10-19T23:12:07Z,brake,medium,Brake system warning - pressure low,True
+KEEPER_A_0210,TRUCK_047,2025-10-09T19:15:07Z,fuel,critical,Low fuel level: 7%,True
+KEEPER_A_0211,TRUCK_016,2025-10-06T22:39:07Z,fuel,low,Low fuel level: 7%,False
+KEEPER_A_0212,TRUCK_046,2025-10-18T08:28:07Z,tire_pressure,medium,Tire 4 pressure 22 PSI,False
+KEEPER_A_0213,TRUCK_044,2025-10-14T08:46:07Z,tire_pressure,low,Tire 1 pressure 25 PSI,False
+KEEPER_A_0214,TRUCK_025,2025-10-15T16:20:07Z,brake,low,Brake system warning - pressure low,False
+KEEPER_A_0215,TRUCK_012,2025-10-15T21:44:07Z,temperature,medium,Engine temp 96°C - sensor 3,False
+KEEPER_A_0216,TRUCK_028,2025-10-10T11:43:07Z,brake,critical,Brake system warning - pressure low,False
+KEEPER_A_0217,TRUCK_050,2025-10-19T06:27:07Z,temperature,low,Engine temp 99°C - sensor 3,True
+KEEPER_A_0218,TRUCK_024,2025-10-20T00:21:07Z,brake,critical,Brake system warning - pressure low,False
+KEEPER_A_0219,TRUCK_025,2025-10-14T04:32:07Z,temperature,high,Engine temp 104°C - sensor 4,True
+KEEPER_A_0220,TRUCK_009,2025-10-19T18:52:07Z,speed,critical,Speed limit exceeded: 149 km/h,False
+KEEPER_A_0221,TRUCK_036,2025-10-07T06:01:07Z,engine,high,Engine fault code: P942,True
+KEEPER_A_0222,TRUCK_038,2025-10-13T21:29:07Z,engine,high,Engine fault code: P602,False
+KEEPER_A_0223,TRUCK_011,2025-10-16T01:28:07Z,engine,critical,Engine fault code: P908,False
+KEEPER_A_0224,TRUCK_044,2025-10-13T04:13:07Z,fuel,critical,Low fuel level: 10%,True
+KEEPER_A_0225,TRUCK_015,2025-10-12T18:34:07Z,speed,medium,Speed limit exceeded: 141 km/h,False
+KEEPER_A_0226,TRUCK_017,2025-10-15T19:41:07Z,engine,medium,Engine fault code: P844,True
+KEEPER_A_0227,TRUCK_017,2025-10-13T15:15:07Z,speed,critical,Speed limit exceeded: 139 km/h,False
+KEEPER_A_0228,TRUCK_004,2025-10-12T00:20:07Z,brake,medium,Brake system warning - pressure low,False
+KEEPER_A_0229,TRUCK_003,2025-10-10T16:09:07Z,fuel,medium,Low fuel level: 5%,False
+KEEPER_A_0230,TRUCK_007,2025-10-09T03:35:07Z,speed,medium,Speed limit exceeded: 122 km/h,True
+KEEPER_A_0231,TRUCK_012,2025-10-10T14:02:07Z,tire_pressure,medium,Tire 4 pressure 24 PSI,True
+KEEPER_A_0232,TRUCK_024,2025-10-13T03:33:07Z,fuel,high,Low fuel level: 10%,True
+KEEPER_A_0233,TRUCK_031,2025-10-21T03:01:07Z,tire_pressure,low,Tire 4 pressure 25 PSI,True
+KEEPER_A_0234,TRUCK_022,2025-10-07T00:28:07Z,temperature,medium,Engine temp 97°C - sensor 2,False
+KEEPER_A_0235,TRUCK_013,2025-10-18T04:27:07Z,temperature,medium,Engine temp 106°C - sensor 2,True
+KEEPER_A_0236,TRUCK_035,2025-10-11T15:09:07Z,brake,high,Brake system warning - pressure low,True
+KEEPER_A_0237,TRUCK_047,2025-10-10T12:29:07Z,speed,medium,Speed limit exceeded: 129 km/h,True
+KEEPER_A_0238,TRUCK_017,2025-10-20T06:37:07Z,engine,low,Engine fault code: P820,True
+KEEPER_A_0239,TRUCK_045,2025-10-07T06:02:07Z,engine,medium,Engine fault code: P533,True
+KEEPER_A_0240,TRUCK_035,2025-10-19T07:35:07Z,brake,medium,Brake system warning - pressure low,True
+KEEPER_A_0241,TRUCK_035,2025-10-12T09:44:07Z,speed,low,Speed limit exceeded: 148 km/h,False
+KEEPER_A_0242,TRUCK_036,2025-10-13T10:24:07Z,brake,medium,Brake system warning - pressure low,False
+KEEPER_A_0243,TRUCK_036,2025-10-20T18:10:07Z,brake,low,Brake system warning - pressure low,False
+KEEPER_A_0244,TRUCK_034,2025-10-18T15:23:07Z,brake,low,Brake system warning - pressure low,True
+KEEPER_A_0245,TRUCK_042,2025-10-17T16:44:07Z,brake,high,Brake system warning - pressure low,True
+KEEPER_A_0246,TRUCK_034,2025-10-09T17:25:07Z,brake,low,Brake system warning - pressure low,True
+KEEPER_A_0247,TRUCK_046,2025-10-09T04:29:07Z,temperature,high,Engine temp 108°C - sensor 2,True
+KEEPER_A_0248,TRUCK_018,2025-10-21T01:23:07Z,fuel,critical,Low fuel level: 6%,False
+KEEPER_A_0249,TRUCK_015,2025-10-20T17:49:07Z,temperature,high,Engine temp 95°C - sensor 1,True
+KEEPER_A_0250,TRUCK_044,2025-10-12T23:29:07Z,speed,low,Speed limit exceeded: 143 km/h,False
+KEEPER_A_0251,TRUCK_023,2025-10-15T00:54:07Z,engine,critical,Engine fault code: P922,False
+KEEPER_A_0252,TRUCK_015,2025-10-14T14:57:07Z,tire_pressure,low,Tire 1 pressure 29 PSI,False
+KEEPER_A_0253,TRUCK_047,2025-10-13T10:29:07Z,fuel,medium,Low fuel level: 7%,True
+KEEPER_A_0254,TRUCK_017,2025-10-14T22:12:07Z,tire_pressure,high,Tire 3 pressure 20 PSI,False
+KEEPER_A_0255,TRUCK_028,2025-10-10T23:49:07Z,brake,medium,Brake system warning - pressure low,True
+KEEPER_A_0256,TRUCK_046,2025-10-09T18:28:07Z,engine,critical,Engine fault code: P586,False
+KEEPER_A_0257,TRUCK_027,2025-10-20T06:13:07Z,tire_pressure,low,Tire 6 pressure 20 PSI,True
+KEEPER_A_0258,TRUCK_028,2025-10-07T09:06:07Z,temperature,low,Engine temp 96°C - sensor 4,True
+KEEPER_A_0259,TRUCK_009,2025-10-18T02:23:07Z,fuel,critical,Low fuel level: 12%,True
+KEEPER_A_0260,TRUCK_004,2025-10-06T22:42:07Z,brake,low,Brake system warning - pressure low,False
+KEEPER_A_0261,TRUCK_043,2025-10-10T22:08:07Z,fuel,critical,Low fuel level: 7%,True
+KEEPER_A_0262,TRUCK_008,2025-10-11T05:01:07Z,temperature,high,Engine temp 108°C - sensor 3,False
+KEEPER_A_0263,TRUCK_015,2025-10-17T06:51:07Z,speed,critical,Speed limit exceeded: 146 km/h,False
+KEEPER_A_0264,TRUCK_044,2025-10-08T14:52:07Z,speed,medium,Speed limit exceeded: 124 km/h,True
+KEEPER_A_0265,TRUCK_005,2025-10-20T04:57:07Z,tire_pressure,high,Tire 6 pressure 23 PSI,False
+KEEPER_A_0266,TRUCK_014,2025-10-13T08:27:07Z,speed,high,Speed limit exceeded: 120 km/h,False
+KEEPER_A_0267,TRUCK_040,2025-10-07T14:12:07Z,brake,high,Brake system warning - pressure low,False
+KEEPER_A_0268,TRUCK_025,2025-10-09T13:11:07Z,tire_pressure,medium,Tire 2 pressure 25 PSI,True
+KEEPER_A_0269,TRUCK_042,2025-10-19T03:39:07Z,fuel,high,Low fuel level: 6%,False
+KEEPER_A_0270,TRUCK_018,2025-10-15T22:16:07Z,tire_pressure,high,Tire 1 pressure 25 PSI,False
+KEEPER_A_0271,TRUCK_037,2025-10-16T22:36:07Z,fuel,high,Low fuel level: 12%,True
+KEEPER_A_0272,TRUCK_019,2025-10-09T21:21:07Z,brake,low,Brake system warning - pressure low,True
+KEEPER_A_0273,TRUCK_036,2025-10-10T00:48:07Z,tire_pressure,low,Tire 1 pressure 23 PSI,False
+KEEPER_A_0274,TRUCK_032,2025-10-14T09:57:07Z,brake,low,Brake system warning - pressure low,False
+KEEPER_A_0275,TRUCK_020,2025-10-17T16:33:07Z,tire_pressure,high,Tire 4 pressure 22 PSI,False
+KEEPER_A_0276,TRUCK_018,2025-10-12T12:01:07Z,fuel,medium,Low fuel level: 14%,True
+KEEPER_A_0277,TRUCK_028,2025-10-15T02:17:07Z,brake,low,Brake system warning - pressure low,False
+KEEPER_A_0278,TRUCK_014,2025-10-18T15:20:07Z,tire_pressure,critical,Tire 5 pressure 23 PSI,True
+KEEPER_A_0279,TRUCK_028,2025-10-17T04:01:07Z,speed,low,Speed limit exceeded: 135 km/h,True
+KEEPER_A_0280,TRUCK_040,2025-10-12T07:32:07Z,speed,low,Speed limit exceeded: 127 km/h,True
+KEEPER_A_0281,TRUCK_001,2025-10-11T04:29:07Z,temperature,critical,Engine temp 107°C - sensor 1,True
+KEEPER_A_0282,TRUCK_017,2025-10-16T19:19:07Z,tire_pressure,critical,Tire 1 pressure 29 PSI,False
+KEEPER_A_0283,TRUCK_010,2025-10-06T21:18:07Z,temperature,critical,Engine temp 106°C - sensor 2,False
+KEEPER_A_0284,TRUCK_013,2025-10-14T03:50:07Z,temperature,critical,Engine temp 102°C - sensor 3,True
+KEEPER_A_0285,TRUCK_010,2025-10-11T00:36:07Z,brake,low,Brake system warning - pressure low,True
+KEEPER_A_0286,TRUCK_022,2025-10-20T00:43:07Z,tire_pressure,low,Tire 5 pressure 25 PSI,False
+KEEPER_A_0287,TRUCK_038,2025-10-09T01:28:07Z,engine,medium,Engine fault code: P534,False
+KEEPER_A_0288,TRUCK_031,2025-10-09T15:26:07Z,fuel,low,Low fuel level: 9%,True
+KEEPER_A_0289,TRUCK_029,2025-10-09T11:15:07Z,tire_pressure,medium,Tire 4 pressure 24 PSI,False
+KEEPER_A_0290,TRUCK_050,2025-10-18T07:45:07Z,tire_pressure,critical,Tire 1 pressure 21 PSI,False
+KEEPER_A_0291,TRUCK_033,2025-10-15T23:43:07Z,tire_pressure,medium,Tire 1 pressure 30 PSI,False
+KEEPER_A_0292,TRUCK_011,2025-10-13T07:25:07Z,engine,medium,Engine fault code: P723,True
+KEEPER_A_0293,TRUCK_020,2025-10-17T10:01:07Z,tire_pressure,critical,Tire 3 pressure 24 PSI,True
+KEEPER_A_0294,TRUCK_049,2025-10-13T14:22:07Z,temperature,low,Engine temp 105°C - sensor 1,True
+KEEPER_A_0295,TRUCK_044,2025-10-16T14:36:07Z,brake,medium,Brake system warning - pressure low,False
+KEEPER_A_0296,TRUCK_019,2025-10-20T01:14:07Z,brake,medium,Brake system warning - pressure low,True
+KEEPER_A_0297,TRUCK_022,2025-10-16T13:22:07Z,speed,medium,Speed limit exceeded: 123 km/h,True
+KEEPER_A_0298,TRUCK_040,2025-10-10T16:15:07Z,fuel,high,Low fuel level: 5%,False
+KEEPER_A_0299,TRUCK_015,2025-10-10T18:34:07Z,temperature,high,Engine temp 105°C - sensor 2,False
+KEEPER_A_0300,TRUCK_021,2025-10-09T04:51:07Z,temperature,high,Engine temp 102°C - sensor 4,False
